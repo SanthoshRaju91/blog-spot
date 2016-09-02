@@ -4,6 +4,12 @@
     "ember": "~2.5.0",
     "ember-cli-shims": "0.1.1",
     "ember-cli-test-loader": "0.2.2",
-    "ember-qunit-notifications": "0.1.0"
+    "ember-qunit-notifications": "0.1.0",
+    "firebase": "^3.0.0",
+    "bootstrap-sass": "boostrap-sass#^3.3.7",
+    "moment": "^2.14.1",
+    "font-awesome": "~4.5.0",
+    "slick-carousel": "^1.6.0",
+    "showdown": "^1.4.2"
   }
 }

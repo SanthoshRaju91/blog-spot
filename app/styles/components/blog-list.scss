@@ -1,0 +1,48 @@
+.blog-list {
+  color: $primary-color-7;
+  cursor: pointer;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: 900;
+    color: $san-marino-blue;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  .blog-list-footer {
+    margin-top: 20px;
+    span {
+      font-weight: $normal;
+      font-size: $small;
+      letter-spacing: 1px;
+    }
+    .tags {
+      padding: 5px 10px;
+      font-weight: $light;
+      background-color: $cinnabar-red;
+      color: $primary-color-6;
+      font-size: $extra-small !important;
+      letter-spacing: .5px;
+      border-radius: 2px;
+      margin-right: 5px;
+    }
+    .blog-list-date {
+      letter-spacing: 1px;
+      font-weight: $normal;
+      font-size: $small;
+      float: right;
+    }
+  }
+}

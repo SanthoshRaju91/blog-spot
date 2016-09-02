@@ -1,0 +1,11 @@
+.carousel {
+  width: 72%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  .slick-arrow {
+    background: $main-gray;
+    border-radius: 50%;
+  }
+}

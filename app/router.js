@@ -6,6 +6,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('blog', function() {});
+  this.route('shared', function() {
+    this.route('videos');
+    this.route('resources');
+    this.route('other-popular');
+  });
+  this.route('about');
+  this.route('details', {path: '/details/:id'});
 });
 
 export default Router;

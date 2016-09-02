@@ -1,0 +1,9 @@
+{{#if model}}
+  {{#each model as |data|}}
+    {{book-panel data=data}}
+  {{/each}}
+{{else}}
+  <div class="no-data text-center">
+    <h2>No Cool Resources for now.</h2>
+  </div>
+{{/if}}

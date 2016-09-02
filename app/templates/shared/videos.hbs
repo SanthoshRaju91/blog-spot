@@ -1,0 +1,11 @@
+<section class="videos">
+  {{#if model}}
+    {{#each model as |data|}}
+      {{video-panel data=data}}
+    {{/each}}
+  {{else}}
+    <div class="no-data text-center">
+      <h2>No Cool Videos for now.</h2>
+    </div>
+  {{/if}}
+</section>

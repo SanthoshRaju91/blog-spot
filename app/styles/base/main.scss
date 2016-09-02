@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700italic,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: $medium;
+  color: $primary-color-6;
+  overflow-x: hidden;
+  z-index: 1;
+
+  .row {
+    #side-bar.affix {
+      background-color: $background-color-2;
+      height: 100vh;
+      width: 220px;
+    }
+    .main-content {
+      width: 80%;
+      margin-left: 20px;
+    }
+  }
+}
+
+.no-data {
+  h2 {
+    text-transform: uppercase;
+    font-size: $medium;
+    font-weight: $light;
+    color: $primary-color-3;
+  }
+}
+.slick-track {
+  img {
+    width: 90px !important;
+  }
+}
+
+.navbar-fixed-top {
+  background: $background-color-2;
+  background-color: $background-color-2;
+  border-color: $background-color-2;
+  height: 60px;
+  .container {
+    .navbar-header {
+      .navbar-text {
+        color: $white;
+      }
+    }
+    .navbar-nav {
+      text-transform: uppercase;
+      li a {
+        letter-spacing: 1px;
+        font-style: italic;
+        color: $white;
+      }
+    }
+
+    .navbar-collapse.collapse.in {
+      margin-top: 10px;
+      background: rgba(44, 62, 80, 0.8);
+      background-color: rgba(44, 62, 80, 0.8);
+      border-color: rgba(44, 62, 80, 0.8);
+    }
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .main-content {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar-fixed-top {
+    .container {
+      .navbar-header {
+        .navbar-toggle {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}

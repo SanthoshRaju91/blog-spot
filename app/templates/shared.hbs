@@ -1,0 +1,17 @@
+<section class="shared-section">
+  <div class="row menu-bar">
+    {{#each model as |route|}}
+      <div class="{{route.class}}">
+        {{#link-to route.url class="shared-tag"}}
+          <h4>{{route.label}}</h4>
+          <div class="icon text-center">
+            {{fa-icon 'fa-angle-down'}}
+          </div>
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </div>
+  <div class="shared-content">
+    {{liquid-outlet}}
+  </div>
+</section>

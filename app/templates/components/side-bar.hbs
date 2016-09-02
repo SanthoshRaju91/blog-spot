@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="brand-section">
+    <div class="brand-name">
+      <img src="/assets/images/emberjs.png" class="img-rounded" width="60" height="60">
+      <span>Learn & Share</span>
+      <h5 class="tag-line text-center">Tech Blog, where knowledge is meant to be shared.</h5>
+    </div>
+  </div>
+  <div class="menu-section">
+    {{#each sideMenu as |menu|}}
+      <div class="menu-item">
+        {{#link-to menu.url}}
+          {{menu.label}}
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </div>
+  <div class="text-center footer-section">
+    {{#each socialMedia as |media|}}
+      <a href="{{media.url}}">
+        {{fa-icon media.iconClass}}
+      </a>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="blogs">
+  <div class="list">
+    {{#if model}}
+      {{#each model as |data|}}
+        <div class="list-item">
+          {{#blog-list data=data}}{{/blog-list}}
+        </div>
+        {{/each}}
+      {{else}}
+        <div class="no-data text-center">
+          <h2>No Cool Blogs for now.</h2>
+        </div>
+      {{/if}}
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="details">
+  <h2>
+    <span {{action 'navigateBack'}}>
+      {{fa-icon 'fa-chevron-left'}}
+    </span>
+    {{header}}
+  </h2>
+  <div class="row record-info">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <span>Date: </span>{{moment-format createDate 'MM/DD/YYYY'}}
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <span>Tagged: </span>{{tagged}}
+    </div>
+  </div>
+  <div class="summary-section">
+    <p>
+      {{summary}}
+    </p>
+  </div>
+  {{#if isContent}}
+    <div class="content">
+      {{markdown-to-html content}}
+    </div>
+  {{/if}}
+</section>
