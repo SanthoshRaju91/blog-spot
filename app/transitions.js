@@ -1,44 +1,61 @@
 export default function() {
 
   this.transition(
-    this.fromRoute('index'),
     this.toRoute('blog'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index'),
     this.toRoute('shared'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index'),
     this.toRoute('about'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index.blog'),
-    this.toRoute('index.blog.blog-details'),
+    this.toRoute('details'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index.shared'),
-    this.toRoute('index.shared.videos'),
+    this.fromRoute('details'),
+    this.toRoute('blog'),
+    this.use('toRight')
+  );
+
+  this.transition(
+    this.toRoute('shared.videos'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index.shared'),
-    this.toRoute('index.shared.resources'),
+    this.fromRoute('shared.resources'),
+    this.toRoute('shared.videos'),
+    this.use('toRight')
+  );
+
+  this.transition(
+    this.fromRoute('shared.other-popular'),
+    this.toRoute('shared.videos'),
+    this.use('toRight')
+  );
+
+  this.transition(
+    this.toRoute('shared.resources'),
     this.use('toLeft')
   );
 
   this.transition(
-    this.fromRoute('index.shared'),
-    this.toRoute('index.shared.other-popular'),
+    this.fromRoute('shared.other-popular'),
+    this.toRoute('shared.resources'),
+    this.use('toRight')
+  );
+
+  this.transition(
+    this.toRoute('shared.other-popular'),
     this.use('toLeft')
   );
 }
